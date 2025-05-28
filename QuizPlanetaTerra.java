@@ -208,19 +208,19 @@ public class QuizPlanetaTerra {
         questoes[14].opcaoE = "E) Monte Santa Helena";
         questoes[14].correta = "D";
 
-        // Questao 15
-        questoes[15] = new Questao();
-        questoes[15].pergunta = "15. Qual é o país com maior número de ilhas?";
-        questoes[15].opcaoA = "A) Filipinas";
-        questoes[15].opcaoB = "B) Indonésia";
-        questoes[15].opcaoC = "C) Suécia";
-        questoes[15].opcaoD = "D) Grécia";
-        questoes[15].opcaoE = "E) Japão";
-        questoes[15].correta = "C";
+//        // Questao 15
+//        questoes[15] = new Questao();
+//        questoes[15].pergunta = "15. Qual é o país com maior número de ilhas?";
+//        questoes[15].opcaoA = "A) Filipinas";
+//        questoes[15].opcaoB = "B) Indonésia";
+//        questoes[15].opcaoC = "C) Suécia";
+//        questoes[15].opcaoD = "D) Grécia";
+//        questoes[15].opcaoE = "E) Japão";
+//        questoes[15].correta = "C";
 
         // Execucao do quiz
         int pontuacao = 0;
-        for (int i = 0; i < questoes.length; i++) {
+        for (int i = 1; i <= questoes.length; i++) {
             questoes[i].escrevaQuestao();
             String resposta = questoes[i].leiaResposta();
             if (questoes[i].isCorreta(resposta)) {
